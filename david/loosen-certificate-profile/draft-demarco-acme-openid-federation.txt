@@ -5,9 +5,9 @@
 Automated Certificate Management Environment                 G. De Marco
 Internet-Draft                                               independent
 Intended status: Standards Track                                A. Ghani
-Expires: 5 September 2025                                      B. Pitman
+Expires: 7 September 2025                                      B. Pitman
                                                                     ISRG
-                                                            4 March 2025
+                                                            6 March 2025
 
 
     Automatic Certificate Management Environment (ACME) with OpenID
@@ -66,7 +66,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 September 2025.
+   This Internet-Draft will expire on 7 September 2025.
 
 Copyright Notice
 
@@ -677,11 +677,11 @@ Table of Contents
    (CSR) and the X.509 Certificate MUST include a public key
    corresponding to the key used to satisfy the challenge.
 
-   Depending on the Certificate Issuer's X.509 certificate profile, the
-   CSR and X.509 Certificate MAY associate the certificate to the
-   Federation Entity by including the Entity ID in the certificate.  To
-   do so, the Issuer includes a Subject Alternative Name extension
-   containing an otherName with a type-id of id-on-
+   Depending on the Certificate Issuer's X.509 Certificate profile, the
+   CSR and X.509 Certificate MAY associate the X.509 Certificate to the
+   Federation Entity by including the Entity ID in the X.509
+   Certificate.  To do so, the Issuer includes a Subject Alternative
+   Name extension containing an otherName with a type-id of id-on-
    OpenIdFederationEntityId.  The value of the name is an Octet String
    containing the UTF-8 encoding of the Entity ID (i.e., the URI in the
    corresponding openid-federation identifier from the newOrder
